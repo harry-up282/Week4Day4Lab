@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="design.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      aside {
+        background-color: #87a08b;
+      }
+      table {
+        border-collapse: collapse;
+        width: 75%;
+        margin: auto;
+        height: auto;
+        padding: 20px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+        background-color: #00628b;
+      }
+
+      tr:nth-child(even) {
+        background-color: #e3e37c;
+      }
+      tr:nth-child(odd) {
+        background-color: #bfd9d9;
+      }
+      tr:hover {
+        background-color: coral;
+      }
+      caption {
+        background-color: #dda8dd;
+      }
+      main {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 30px;
+        /* flex-basis: 50%; */
+        /* background-color: #dda8dd; */
+      }
+      .content {
+        flex-basis: 50%;
+        margin-top: 20px;
+      }
+      .pics {
+        flex-basis: 50%;
+        margin-top: 20px;
+        margin-right: 0;
+      }
+      .pics img {
+        border-radius: 15px;
+        /* display: inline-block; */
+      }
+      #one {
+        width: 205px;
+        height: 265px;
+      }
+      #two {
+        width: 255px;
+        height: 200px;
+      }
+      #three {
+        width: 300px;
+        height: 355px;
+      }
+      #four {
+        width: 325px;
+        height: 255px;
+      }
+      /* #five {
+        width: 125px;
+        height: 125px;
+      } */
+      .gridwrapper {
+        display: grid;
+        /* gap: 10px; */
+        column-gap: 10px;
+        row-gap: 15px;
+        grid-template-columns: 325px 325px;
+        grid-template-rows: 400px 400px;
+      }
+      .description {
+        display: none;
+        width: 600px;
+        border: 3px solid maroon;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 3px 6px #e3e37c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Whisker Wonder's</h2>
+
+      <!-- Navbar section -->
+      <nav>
+        <a href="index.html">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="findapet.html">Find A Pet</a>
+
+        <a href="page2.html">How it works</a>
+
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="pics">
+        <div class="gridwrapper">
+          <img src="images/white-parrot.jpg" alt="Parrot Image" id="one" />
+          <img src="images/rabbit.jpg" alt="rabbit Image" id="two" />
+          <img src="images/Dog.jpg" alt="Dog Image" id="three" />
+          <img src="images/cat-3.jpg" alt="cat image" id="four" />
+          <!-- <img src="images/cat-2.jpg" alt="another cat image" id="five" /> -->
+          <p class="description active" id="descr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            ratione aut praesentium ullam illum cumque fugit possimus inventore
+            debitis assumenda! Perspiciatis dolore doloremque reprehenderit
+            repudiandae odio fugit hic rerum quam?
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <p>
+          Our mission is simple yet profound: to provide shelter, care, and a
+          second chance at happiness for animals in need. We believe that every
+          pet deserves a loving home, and we work tirelessly to make that a
+          reality.
+        </p>
+        <p>
+          From cozy cat condos to spacious dog runs, every animal in our care
+          receives the attention, nourishment, and medical support they need to
+          thrive. Our team of experienced and compassionate staff and volunteers
+          ensure that each pet is treated with the utmost care and respect.
+        </p>
+        <p>
+          We take great care to match our rescue pets with loving families,
+          creating lifelong bonds that bring joy and fulfillment to both pets
+          and their new owners. Whether you're looking for a playful kitten, a
+          loyal canine companion, or a more exotic addition to your family, we
+          have a diverse range of adoptable animals waiting to meet you.
+        </p>
+      </div>
+    </main>
+    <aside>
+      <table>
+        <caption>
+          Striped Table
+        </caption>
+        <tr>
+          <th>Sl.No.</th>
+          <th>Pet</th>
+          <th>Type of pet</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Dog</td>
+          <td>German shepard</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Dog</td>
+          <td>Poodle</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Cat</td>
+          <td>Siamese</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Cat</td>
+          <td>Persian</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </aside>
+    <footer>
+      <p>&copy; copyright 2023</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i
+        ><i class="fa-brands fa-instagram"></i
+        ><i class="fa-brands fa-twitter"></i>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // var open = document.getElementsByTagName("img");
+    // var pic = document.getElementById("descr");
+
+    var open = document.getElementsByTagName("img"); // Get the first image
+    var pic = document.getElementById("descr");
+
+    // open.addEventListener("click", function () {
+    //   openMessage(pic);
+    // });
+
+    for (var i = 0; i < open.length; i++) {
+  open[i].addEventListener("click", function () {
+    openMessage(pic);
+  });
+}
+    function openMessage(show) {
+      show.style.display = "block";
+    }
+  </script>
+</html>

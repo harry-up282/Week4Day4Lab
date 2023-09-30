@@ -1,0 +1,40 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  background-color: #87a08b;
+  margin-top: 25px;
+  box-shadow: 10px 10px 5px 12px rgba(240, 238, 180, 0.5);
+  width: 75%;
+  margin: auto;
+  border-radius: 20px;
+}
+.card {
+  height: 425px;
+  width: 250px;
+  border: 3px solid olivedrab;
+  border-radius: 20px;
+  margin: 7px;
+  border: none;
+}
+.pic img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 15px;
+  box-shadow: 10px 10px 5px 12px rgba(200, 198, 143, 0.5);
+}
+.btn {
+  margin-top: 150px;
+  text-align: center;
+
+  border-radius: 10px;
+  visibility: hidden;
+}
+.top-btn {
+  margin-bottom: 100px;
+  text-align: center;
+  visibility: hidden;
+}

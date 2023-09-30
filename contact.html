@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="design.css"> 
+    <style>
+      
+      .wrapper{
+        margin:auto;
+        width: 70%;
+        box-shadow: rgba(192, 227, 34, 0.741) 0px 20px 30px -10px;
+        border-radius: 20px;
+        border: 3px solid #333030;
+      }
+      fieldset{
+        border: none;
+        border-radius: 25px;
+      }
+      main{
+        
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body style="background-color:  #87a08b;">
+    
+    <header>
+    <h2 >Whisker wonder pet adoption Agency</h2>
+  <nav>
+      <a href="index.html">Home</a></li>
+      <a>About Us</a>
+      <a href="findapet.html">Find a pet</a>
+      <a href="page2.html">How it works</a>
+      <a>Contact</a>
+  </nav>
+</header>  
+<br>  
+<div class="wrapper">
+      <main>
+       
+        <h1 style="color: white">Contacting Us</h1>
+        <p style="color: white">
+          If you need more information about the Whisker wonder Pet adoption Agency, Hours of Operations,
+          Facilities or questions about this site, please contact us buy using
+          one of the following:
+        </p>
+        <h2 style="color: white">Phone:</h2>
+        <p style="color: white">(800)WHYNOTPETS</p>
+        <h2 style="color: white">Email:</h2>
+        <p style="color: white">Whiskerwonder@lol.com</p>
+        <h2 style="color: white">Fill Out This Form:</h2>
+        <br />
+      
+
+  
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend style="color: white">Contact Form Enter</legend>
+            <label for="fname" style="color: white">your full name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="email" style="color: white">Enter your email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="phone" style="color: white">Enter your phone:</label><br />
+             <!-- placeholder="123-45-678"  -->
+     <!-- required  -->
+    
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            /><br /><br />
+            <p style="color: white">How should we contact you?</p>
+            <input
+              type="radio"
+              id="email"
+              name="prefered_contact"
+              value="email"
+            />
+            <label for="email" style="color: white">Email</label>
+            <input
+              type="radio"
+              id="phone"
+              name="prefered_contact"
+              value="phone"
+            />
+            <label for="phone" style="color: white">Phone</label><br />
+            <p style="color: white">What pet are you inquiring?</p>
+            <label for="enquiry" style="color: white">Choose a pet:</label>
+            <select name="enquiry" id="enquiry">
+              <option value="Germanshepard">German shepard Dog</option>
+              <option value="Poodle">Poodle Dog</option>
+              <option value="Siamese">Siamese cat</option>
+              <option value="Persian">Persian cat</option>
+            </select>
+            <br /><br />
+            <p><label for="feedback" style="color: white">How did you hear about us:</label></p>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <br />
+            <input type="submit" value="Inquire" style="color: white; background-color: #aec7a7;" />
+          </fieldset>
+        </form> 
+        
+      </main>
+    </div>
+    <br>
+    <br>
+    <br>
+     <footer>
+       
+          <p>&copy; copyright 2023</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i >
+           <i class="fa-brands fa-twitter"></i>
+          </div>
+       <!-- <p style="color: white">
+          This website is designed and created solely for educational purposes
+          only at Westcliff University. All contents are not intended for any
+          commercial gain or use.</p> -->
+
+    </footer> 
+  
+  </body>
+</html>
